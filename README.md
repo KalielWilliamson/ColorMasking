@@ -1,4 +1,5 @@
 ---
+python_version: 3.11 
 title: ColorMasking
 emoji: 🤗
 colorFrom: yellow
