@@ -1,14 +1,15 @@
 [project]
-name = "color-mapping"
+name = "colormasking"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "gradio",
-    "diffusers",
-    "transformers",
-    "controlnet_aux",
-    "Pillow",
+    "controlnet-aux>=0.0.9",
+    "diffusers>=0.32.2",
+    "gradio>=5.14.0",
     "numpy<2.0.0",
+    "pillow>=11.1.0",
+    "torch<2.3.0",
+    "transformers>=4.48.2",
 ]

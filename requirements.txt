@@ -1,5 +1,5 @@
 gradio
-torch<=2.5.0
+torch<2.3.0
 diffusers
 transformers
 controlnet_aux
