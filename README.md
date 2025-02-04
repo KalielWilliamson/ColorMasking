@@ -1,0 +1,11 @@
+title="ColorMasking"
+emoji="🎨"
+colorFrom="red"
+colorTo="blue"
+sdk="gradio"
+python_version="3.11.11"
+sdk_version="5.14.0"
+suggested_hardware="t4-small"
+suggested_storage="small"
+app_file="app.py"
+pinned=false
