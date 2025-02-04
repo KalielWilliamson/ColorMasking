@@ -63,7 +63,6 @@ class LineartGenerator:
         return combined
 
     def generate_image(self, annotated_lineart: Image.Image,
-                       prompt: str = "",
                        num_inference_steps: int = 30) -> Image.Image:
         if annotated_lineart is None:
             raise ValueError("No annotated lineart provided!")
@@ -73,8 +72,9 @@ class LineartGenerator:
         generator = torch.manual_seed(self.seed)
 
         return self.pipe(
-            prompt=prompt,
+            prompt="A colorful image and high resolution image",
             image=refined_lineart,
             num_inference_steps=num_inference_steps,
-            generator=generator
+            generator=generator,
+            negative_prompt="monochrome, desaturated, low contrast"
         ).images[0]
