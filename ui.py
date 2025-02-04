@@ -35,8 +35,6 @@ class SketchToImageApp:
                     label="Annotate Your Lineart",
                     type="numpy",
                     brush=gr.Brush(),
-                    width=512,
-                    height=512
                 )
 
             lineart_file_input.change(
